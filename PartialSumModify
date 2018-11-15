@@ -44,6 +44,8 @@ int main(){
     for(i=0;i<N;i++)
         std::cout << sumArr[i]+Arr[i] << "  " ;
     std::cout << '\n';
+    delete[] Arr;
+    delete[] sumArr;
     return 0;
 }
 
