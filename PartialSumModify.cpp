@@ -22,8 +22,6 @@
 */
 
 #include<iostream>
-#include<cstring>
-
 int main(){
     int query,i,*Arr,*sumArr,N,l,r,v;
     std::cin >> query >> N;
