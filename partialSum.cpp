@@ -18,17 +18,15 @@
 */
 
 #include<iostream>
-#include<cstring>
-
 int main(){
     int N,*Arr,*sumArr,query,i,l,r;
     std::cin >> query;
     std::cin >> N;
     Arr = new int[N];
     sumArr = new int[N];
-    memset(sumArr,0,N);
     for(i=0;i<N;i++){
         std::cin >> Arr[i];
+        sumArr[i] = 0;
         if(i==0)
             sumArr[i] = Arr[i];
         else
@@ -45,4 +43,3 @@ int main(){
     delete[] sumArr;
     return 0;
 }
-
